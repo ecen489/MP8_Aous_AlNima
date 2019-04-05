@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="top|center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase Example"
+        android:padding="20sp" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:gravity="top|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp">
+
+        <RadioButton
+            android:id="@+id/rad_bart"
+            android:text="Bart"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_ralph"
+            android:text="Ralph"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_milhouse"
+            android:text="Milhouse"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_lisa"
+            android:text="Lisa"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20sp">
+
+        <EditText
+            android:id="@+id/edtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SET PASSWORD"
+            android:onClick="buttonClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/myTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Password Appears Here"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View PASSWORD"
+            android:onClick="buttonClick2"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
